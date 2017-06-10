@@ -1,0 +1,270 @@
+/*// Place all the styles related to the home controller here.*/
+/*// They will automatically be included in application.css.*/
+/*// You can use Sass (SCSS) here: http://sass-lang.com/*/
+body{
+background-image: url("2.jpg") ;
+background-size: 200%;
+font-size: 20px;
+font-family: Verdana;
+color: #767676;
+margin: 0px;
+}
+.name{
+	list-style-type: none;
+	margin: 0;
+	float: left;
+	padding-top: 15px;
+	padding-left: 0px;
+}
+li{
+	font-size: 0.8rem;
+	display: inline-block;
+	text-decoration: none;
+}
+
+header{
+	background-image: none;
+	height: 30px;
+}
+.container{
+	background-color: #ffffff;
+	width: 78%;
+	height: 900px;
+	/*margin-top: 100px*/
+	margin-left:auto;
+	margin-right: auto;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	border: 0;
+	min-width: 900px;
+
+}
+.logo{
+	height: 60px;
+	background-color: white;
+	background: white; 
+	/*float: left;*/
+
+}
+img{
+	background: white;
+	height: 60px;
+}
+a{
+	background: transparent;
+}
+.search{
+	height: 16px;
+	color:#767676;
+}
+
+input{
+	width: 460px;
+	height: 30px;
+	font-size: 16px;
+	border-style: hidden;
+	/*box-shadow: 1px 0px 1px 0px gray;*/
+}
+.w{
+	padding-bottom: 5px;
+	color: #767676;
+}
+.login{
+	list-style-type: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	padding-top: 12px;
+	padding-right: 15px;
+}
+.profile{
+ height: 25px;
+ opacity: 0.5;
+ text-decoration: none;
+}
+.upload{
+	font-size: 14px;
+	color:#767676;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+
+}
+a:link {
+    color: #767676;
+}
+
+/* visited link */
+a:visited {
+    color: #767676;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+.youtube{
+	float:left;
+}
+.list{
+	width: 200px;
+	padding-top: 25px;
+	padding-left: 0px;
+	margin: 0px;
+	font-size: 10px;
+}
+.line{
+	height: 20px;
+	color:#767676;
+}
+.we{
+	font-size: 13px;
+	display: block;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.main{
+	width: 100%;
+	/*display: inline-block;*/
+	height: 500px;
+	background-color: #ffffff;
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+}
+
+.taskbar{
+	/*padding-top: 0px;*/
+	width: 20%;
+	background-color: #ffffff;
+	height: 500px;
+	border-right: 1px solid lightgray;
+	/*margin-right: 0;*/
+	/*overflow: hidden;*/
+	/*display: inline-block;*/
+	float: left;
+}
+.video{
+	width: 79%;
+	height: 440px;
+	float: right;
+	background-color: #f2f2f2;
+	/*overflow: hidden;*/
+	/*display: inline-block;*/
+}
+.cont{
+	width: 90%;
+	height: 440px;
+	margin: auto;
+	background-color: #f2f2f2
+
+}
+iframe{
+	/*margin: 0 auto;*/
+	display: inline-block;
+}
+.profiles1{
+	width: 90%;
+	height: 100px;
+	margin: 0px;
+	margin-top: 0px;
+	background-color: white;
+	border-bottom: 1px solid lightgray;
+}
+.profiles{
+	width: 90%;
+	height: 100px;
+	margin: 0px;
+	margin-top: 0px;
+	background-color: #fcfcfc;
+	border-bottom: 1px solid lightgray;
+
+}
+.titlevideo{
+	font-size: 20px;
+	color:black;
+	display: block;
+}
+.listvideo{
+	/*width: 400px;*/
+	padding-left: 0px;
+	margin-top: 20px;
+	display: inline-block;
+	color: lightgray;
+}
+.face1{
+	height: 23px;
+}
+.byoutube{
+	height: 30px;
+	color: white ;
+	background-color: red;
+	border: none;
+}
+.views{
+	height: 30px;
+	width: 40px;
+	font-size: 12px;
+	margin-left: 2px;
+
+}
+.likes{
+	float:right;
+	padding-left: 0px;
+	/*width:px;*/
+	/*display: block;*/
+
+}
+.linegreen{
+	width: 100px;
+	height: 10px;
+	margin: 0px;
+}
+.likeslist{
+	display: block;
+	text-align: right;
+	font-size: 15px;
+	vertical-align: top;
+
+}
+.like_img{
+	height: 20px;
+}
+.likes_dislike{
+	display: inline-block;
+	font-size: 12px;
+	color: lightgray;
+
+}
+#like_background{
+	background-color: #fcfcfc;
+}
+.profiles_list{
+	margin: 0px;
+	padding-left: 0px;
+	display: block;
+}
+.profiles_list1{
+	padding-top: 25px;
+	display: block;
+	font-size: 12px;
+}
+.profile_pic{
+	margin-top: 15px;
+}
+.profile_avatar{
+	height: 70px;
+	padding-left: 10px;
+	margin-top: 15px;
+	float: left;
+}
+#green_line{
+	border-left: 2px solid lightgreen;
+}
+.green_thumb{
+	height: 20px;
+}

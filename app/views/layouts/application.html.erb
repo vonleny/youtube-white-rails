@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YoutubeWhiteRails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<div class="container">
+  	<header>
+	
+		<div class="logo">
+			<a href="#" class="youtube"> <%= image_tag ('YouTube-logo-full_color.png') %> </a>
+			<ul class = "name">	
+				<li class="w">|</li>
+				<!-- <li class="w"><img class="search" src="search.png" alt="Search"></li> -->
+				<li class="w"><input type="text" placeholder="&#128269; Search"></li>
+			</ul>
+			<ul class="login">
+				<li ><%= link_to 'Login',home_login_url %></li>
+				<li class ="upload">|</li>
+				<li><a href="#" class="upload">+ Upload</a></li>
+			</ul>
+		</div>
+	
+	</header>
+	<div class="main">
+			
+			<section class="video">
+				<%= yield %>
+			</section>
+			<section class="taskbar" >
+				<ul class="listvideo">
+					<li class ="we"> Guide</li>
+					<li class ="we"><a href="#"><%= image_tag ('profile_l.png'), class: 'line' %>Apostol</a></li>
+					<li class ="we"><a href="#"><%= image_tag ('world.png'), class: 'line' %> To Watch</a></li>
+					<li class ="we"><a href="#"><%= image_tag ('heart.png'), class: 'line' %> Suscriptions</a></li>
+					<li class ="we"><a href="#"><%= image_tag ('clipboard.png'), class: 'line' %> History</a></li>
+					<li class ="we"><a href="#"><%= image_tag ('watch.png'), class: 'line' %> Watch Later</a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</div>
+    
+  </body>
+</html>
