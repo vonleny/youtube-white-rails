@@ -6,6 +6,6 @@ class SessionsController < ApplicationController
   	return render action: 'new' unless @user
   	#logged in 
   	session[:user_id] = @user.id
-  	redirect_to notes_path
+  	redirect_to videos_path
   end
 end
