@@ -1,0 +1,6 @@
+<% @videos.each do |video|%>
+	
+	<iframe width="200" height="113" src="https://www.youtube.com/embed/<%= video.body.split("=")[1] %>" frameborder="0" allowfullscreen></iframe><br>
+	<%= video.name %> <br>
+
+<% end -%>

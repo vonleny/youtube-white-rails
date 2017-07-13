@@ -21,9 +21,14 @@
 				<li class="w"><input class= "search-input" type="text" placeholder="&#128269; Search"></li>
 			</ul>
 			<ul class="login">
-				<li ><%= link_to 'Login', new_sessions_url %></li>
-				<li class ="upload">|</li>
-				<li><%= link_to 'Sign Up', new_users_url %></li>
+				<% if !current_user %>
+					<li ><%= link_to 'Login', new_sessions_url %></li>
+					<li class ="upload">|</li>
+					<li><%= link_to 'Sign Up', new_users_url %></li>
+				<% else %>
+					<li><a href="#"><%= current_user.username.capitalize%></a></li>
+					<li><%= link_to 'Log Out', logout_path, method: "delete" %></li>
+				<% end -%>
 			</ul>
 		</div>
 	
@@ -36,7 +41,14 @@
 			<section class="taskbar" >
 				<ul class="listvideo">
 					<li class ="we"> Guide</li>
-					<li class ="we"><a href="#"><%= image_tag ('profile_l.png'), class: 'line' %> <%= current_user.username.capitalize%></a></li>
+					  <% if !current_user %>
+			            <li class ="we"><a href="#"><%= image_tag ('profile_l.png'), class: 'line' %></a></li>
+			          <% else %>
+			            <li class ="we"><a href="#"><%= image_tag ('profile_l.png'), class: 'line' %> <%= current_user.username.capitalize%></a></li>
+			            
+			            
+			          <% end %>
+					
 					<li class ="we"><a href="#"><%= image_tag ('world.png'), class: 'line' %> To Watch</a></li>
 					<li class ="we"><a href="#"><%= image_tag ('heart.png'), class: 'line' %> Suscriptions</a></li>
 					<li class ="we"><a href="#"><%= image_tag ('clipboard.png'), class: 'line' %> History</a></li>

@@ -15,9 +15,9 @@
   <tbody>
     <% @videos.each do |video| %>
       <tr>
-        
+        <td><iframe width="200" height="113" src="https://www.youtube.com/embed/<%= video.body.split("=")[1] %>" frameborder="0" allowfullscreen></iframe></td>
         <td><%= video.name %></td>
-        <td><%= video.body %></td>
+        
         <td><%= link_to 'Show', video %></td>
         <td><%= link_to 'Edit', edit_video_path(video) %></td>
         <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
