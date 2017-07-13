@@ -1,6 +1,17 @@
-<% @videos.each do |video|%>
-	
-	<iframe width="200" height="113" src="https://www.youtube.com/embed/<%= video.body.split("=")[1] %>" frameborder="0" allowfullscreen></iframe><br>
-	<%= video.name %> <br>
+<table>
 
-<% end -%>
+
+	<tbody>
+		
+		<% @videos.each do |video|%>
+			<tr>
+			<td><iframe width="200" height="113" src="https://www.youtube.com/embed/<%= video.body.split("=")[1] %>" frameborder="0" allowfullscreen></iframe></td>
+			<td><%= video.name %></td> 
+			<td><%= video.created_at.strftime("%B %d") %> </td>
+			<td><%= @users.find(video.user_id).username%></td> 
+
+			</tr>
+		<% end -%>
+
+	</tbody>
+</table>
