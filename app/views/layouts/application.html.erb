@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YoutubeWhiteRails</title>
+    <title>Youtube-White-Rails</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,7 +15,11 @@
 		<div class="logo">
 			
 			<ul class = "name">	
-				<li class="w"><%= image_tag ('YouTube-logo-full_color.png') %> </li>
+				<li class="w">
+					<%= link_to root_path do %>
+   						<%= image_tag ('YouTube-logo-full_color.png') %>
+					<% end %> 
+				</li>
 				<li class="w">|</li>
 				<!-- <li class="w"><img class="search" src="search.png" alt="Search"></li> -->
 				<li class="w"><input class= "search-input" type="text" placeholder="&#128269; Search"></li>
@@ -26,7 +30,7 @@
 					<li class ="upload">|</li>
 					<li><%= link_to 'Sign Up', new_users_url %></li>
 				<% else %>
-					<li><a href="#"><%= current_user.username.capitalize%></a></li>
+					<li><a href="/videos"><%= current_user.username.capitalize%></a></li>
 					<li><%= link_to 'Log Out', logout_path, method: "delete" %></li>
 				<% end -%>
 			</ul>

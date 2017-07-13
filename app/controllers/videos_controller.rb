@@ -1,11 +1,11 @@
 class VideosController < ApplicationController
   before_action :set_video, only: [:show, :edit, :update, :destroy]
-  before_action :require_logged_in
+  # before_action :require_logged_in
 
   # GET /videos
   # GET /videos.json
   def index
-    @videos = current_user.videos.all
+    @videos = Video.all
   end
 
   # GET /videos/1
@@ -65,7 +65,8 @@ class VideosController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_video
-      @video = current_user.videos.find(params[:id])
+      @video = Video.find(params[:id])
+      @users = User.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
