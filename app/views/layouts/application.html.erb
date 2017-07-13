@@ -23,7 +23,7 @@
 			<ul class="login">
 				<li ><%= link_to 'Login', new_sessions_url %></li>
 				<li class ="upload">|</li>
-				<li><a href="#" class="upload">+ Upload</a></li>
+				<li><%= link_to 'Sign Up', new_users_url %></li>
 			</ul>
 		</div>
 	
@@ -36,7 +36,7 @@
 			<section class="taskbar" >
 				<ul class="listvideo">
 					<li class ="we"> Guide</li>
-					<li class ="we"><a href="#"><%= image_tag ('profile_l.png'), class: 'line' %>Apostol</a></li>
+					<li class ="we"><a href="#"><%= image_tag ('profile_l.png'), class: 'line' %> <%= current_user.username.capitalize%></a></li>
 					<li class ="we"><a href="#"><%= image_tag ('world.png'), class: 'line' %> To Watch</a></li>
 					<li class ="we"><a href="#"><%= image_tag ('heart.png'), class: 'line' %> Suscriptions</a></li>
 					<li class ="we"><a href="#"><%= image_tag ('clipboard.png'), class: 'line' %> History</a></li>

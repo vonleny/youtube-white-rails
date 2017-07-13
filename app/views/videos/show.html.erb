@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @video.user %>
-</p>
+
 
 <p>
   <strong>Name:</strong>
@@ -12,7 +9,7 @@
 
 <p>
   <strong>Body:</strong>
-  <%= @video.body %>
+  <%= video_url (@video.body) %>
 </p>
 
 <%= link_to 'Edit', edit_video_path(@video) %> |
