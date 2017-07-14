@@ -12,8 +12,11 @@
 </p>
 <p>
 	<strong>Uploaded by:</strong>
-	<%= @users.find(@video.id).username %>
+	<%= @users.find(@video.user_id).username %>
 </p>
 
-
-<%= link_to 'Back', root_path %>
+<% if !current_user %>
+	<%= link_to 'Back', root_path %>
+<% else %>
+	<%= link_to 'Back', videos_path %>
+<% end -%>

@@ -46,7 +46,7 @@
 				<ul class="listvideo">
 					<li class ="we"> Guide</li>
 					  <% if !current_user %>
-			            <li class ="we"><a href="#"><%= image_tag ('profile_l.png'), class: 'line' %></a></li>
+			            <li class ="we"></li>
 			          <% else %>
 			            <li class ="we"><a href="#"><%= image_tag ('profile_l.png'), class: 'line' %> <%= current_user.username.capitalize%></a></li>
 			            
